@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari Charan | AIML Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of Hari Charan, B.Tech AIML student at KITS (2022-2026). Specialized in Machine Learning, Deep Learning, NLP, and Computer Vision.">
+    <meta name="description"
+        content="Portfolio of Hari Charan, B.Tech AIML student at KITS (2022-2026). Specialized in Machine Learning, Deep Learning, NLP, and Computer Vision.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="theme-blue">
     <!-- Neural Network Interactive Canvas -->
     <canvas id="neuralCanvas"></canvas>
@@ -19,18 +24,24 @@
     <!-- Theme Customizer Grid (Floating) -->
     <div class="theme-customizer">
         <button class="theme-toggle-btn" aria-label="Open Theme Customizer">
-            <svg class="icon-spin" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            <svg class="icon-spin" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
             </svg>
         </button>
         <div class="theme-options">
             <span class="theme-title">Theme Accent</span>
             <div class="color-options">
-                <button class="color-btn active" data-theme="theme-blue" style="background: #00f0ff;" title="Cyan Edge"></button>
-                <button class="color-btn" data-theme="theme-purple" style="background: #bd00ff;" title="Neon Violet"></button>
-                <button class="color-btn" data-theme="theme-emerald" style="background: #00ff87;" title="Matrix Green"></button>
-                <button class="color-btn" data-theme="theme-coral" style="background: #ff5e62;" title="Cyber Coral"></button>
+                <button class="color-btn active" data-theme="theme-blue" style="background: #00f0ff;"
+                    title="Cyan Edge"></button>
+                <button class="color-btn" data-theme="theme-purple" style="background: #bd00ff;"
+                    title="Neon Violet"></button>
+                <button class="color-btn" data-theme="theme-emerald" style="background: #00ff87;"
+                    title="Matrix Green"></button>
+                <button class="color-btn" data-theme="theme-coral" style="background: #ff5e62;"
+                    title="Cyber Coral"></button>
             </div>
         </div>
     </div>
@@ -73,36 +84,47 @@
                             <span id="typed-text"></span><span class="typed-cursor">|</span>
                         </h2>
                         <p class="hero-description">
-                            Final-year B.Tech Artificial Intelligence & Machine Learning student at Kamala Institute of Technology and Science (KITS). Designing, implementing, and optimizing intelligent systems across Computer Vision, NLP, and Deep Learning.
+                            Final-year B.Tech Artificial Intelligence & Machine Learning student at Kamala Institute of
+                            Technology and Science (KITS). Designing, implementing, and optimizing intelligent systems
+                            across Computer Vision, NLP, and Deep Learning.
                         </p>
                         <div class="hero-cta-buttons">
                             <a href="resume.pdf" class="btn btn-primary" download>
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                    <polyline points="7 10 12 15 17 10"/>
-                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" class="btn-icon">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
                                 </svg>
                                 Download Resume
                             </a>
                             <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                         </div>
                         <div class="social-links-container">
-                            <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank"
+                                rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" stroke="none" fill="currentColor" r="2"/>
+                            <a href="https://www.linkedin.com/in/hari-charan-musipatla-8802612b7" target="_blank" rel="noopener noreferrer" class="social-icon"
+                                aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" stroke="none" fill="currentColor" r="2" />
                                 </svg>
                             </a>
                             <a href="mailto:musipatlaharicharan2005@gmail.com" class="social-icon" aria-label="Email">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
                                 </svg>
                             </a>
                         </div>
@@ -146,14 +168,21 @@
                     <div class="about-card intro-card glass">
                         <div class="card-glow"></div>
                         <h3>The Spark</h3>
-                        <p>Fascinated by how computers can learn patterns from raw data, I dived into the world of Artificial Intelligence. Building neural networks that mimic the brain's cognitive processes isn't just code to me—it's a medium for solving real-world, high-impact problems.</p>
-                        <p>As an AIML student at KITS (2022–2026), my primary focus is designing architectures that optimize accuracy without sacrificing efficiency, pushing models to execute beautifully in real-time environments.</p>
+                        <p>Fascinated by how computers can learn patterns from raw data, I dived into the world of
+                            Artificial Intelligence. Building neural networks that mimic the brain's cognitive processes
+                            isn't just code to me—it's a medium for solving real-world, high-impact problems.</p>
+                        <p>As an AIML student at KITS (2022–2026), my primary focus is designing architectures that
+                            optimize accuracy without sacrificing efficiency, pushing models to execute beautifully in
+                            real-time environments.</p>
                     </div>
                     <div class="about-card goal-card glass">
                         <div class="card-glow"></div>
                         <h3>Career Vision</h3>
-                        <p>I aim to bridge the gap between academic research and production-ready intelligent software. My target is to join forward-thinking product teams building state-of-the-art NLP engines, computer vision classifiers, and LLM orchestration systems.</p>
-                        <p>I believe in building models that are fair, transparent, and computationally light enough to run anywhere.</p>
+                        <p>I aim to bridge the gap between academic research and production-ready intelligent software.
+                            My target is to join forward-thinking product teams building state-of-the-art NLP engines,
+                            computer vision classifiers, and LLM orchestration systems.</p>
+                        <p>I believe in building models that are fair, transparent, and computationally light enough to
+                            run anywhere.</p>
                     </div>
                     <div class="about-details-card glass">
                         <div class="card-glow"></div>
@@ -188,132 +217,74 @@
                     <h2 class="section-title">My Tech Stack</h2>
                     <div class="underline"></div>
                 </div>
-
                 <!-- Skill Filter Tabs -->
                 <div class="skill-tabs">
                     <button class="skill-tab-btn active" data-category="all">All Skills</button>
                     <button class="skill-tab-btn" data-category="languages">Languages</button>
-                    <button class="skill-tab-btn" data-category="ml-dl">ML & Deep Learning</button>
-                    <button class="skill-tab-btn" data-category="nlp">NLP & LLMs</button>
-                    <button class="skill-tab-btn" data-category="tools">Tools & Env</button>
-                    <button class="skill-tab-btn" data-category="cloud">Cloud Basics</button>
+                    <button class="skill-tab-btn" data-category="data-science">Data Science</button>
+                    <button class="skill-tab-btn" data-category="fullstack">Full-Stack</button>
+                    <button class="skill-tab-btn" data-category="database">Database</button>
                 </div>
 
                 <!-- Skills Grid -->
                 <div class="skills-grid" id="skills-grid">
-                    <!-- Languages -->
+                    <!-- Python -->
                     <div class="skill-card glass" data-category="languages">
                         <div class="skill-icon-wrapper">
                             <span class="skill-logo python-logo">Py</span>
                         </div>
                         <h4 class="skill-name">Python</h4>
                         <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 95%;"></div>
+                        </div>
                     </div>
+                    <!-- Java -->
                     <div class="skill-card glass" data-category="languages">
                         <div class="skill-icon-wrapper">
-                            <span class="skill-logo cpp-logo">C++</span>
+                            <span class="skill-logo cpp-logo">Jv</span>
                         </div>
-                        <h4 class="skill-name">C++</h4>
-                        <span class="skill-level">Intermediate</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="languages">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo sql-logo">SQL</span>
-                        </div>
-                        <h4 class="skill-name">SQL</h4>
+                        <h4 class="skill-name">Java</h4>
                         <span class="skill-level">Proficient</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-                    </div>
-
-                    <!-- ML & DL -->
-                    <div class="skill-card glass" data-category="ml-dl">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo pytorch-logo">Pt</span>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 80%;"></div>
                         </div>
-                        <h4 class="skill-name">PyTorch</h4>
+                    </div>
+                    <!-- Data Science -->
+                    <div class="skill-card glass" data-category="data-science">
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-logo sklearn-logo">DS</span>
+                        </div>
+                        <h4 class="skill-name">Data Science</h4>
                         <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="ml-dl">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo tf-logo">Tf</span>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 90%;"></div>
                         </div>
-                        <h4 class="skill-name">TensorFlow</h4>
+                    </div>
+                    <!-- Full Stack Bootcamp -->
+                    <div class="skill-card glass" data-category="fullstack">
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-logo html-logo">FS</span>
+                        </div>
+                        <h4 class="skill-name">Full Stack Bootcamp</h4>
                         <span class="skill-level">Proficient</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="ml-dl">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo sklearn-logo">Sk</span>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 82%;"></div>
                         </div>
-                        <h4 class="skill-name">Scikit-learn</h4>
-                        <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
                     </div>
 
-                    <!-- NLP -->
-                    <div class="skill-card glass" data-category="nlp">
+                    <!-- MySQL -->
+                    <div class="skill-card glass" data-category="database">
                         <div class="skill-icon-wrapper">
-                            <span class="skill-logo hf-logo">Hf</span>
+                            <span class="skill-logo sql-logo">My</span>
                         </div>
-                        <h4 class="skill-name">HuggingFace</h4>
-                        <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="nlp">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo nltk-logo">Nl</span>
-                        </div>
-                        <h4 class="skill-name">NLTK / SpaCy</h4>
+                        <h4 class="skill-name">MySQL</h4>
                         <span class="skill-level">Proficient</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" style="width: 85%;"></div>
+                        </div>
                     </div>
 
-                    <!-- Tools & Env -->
-                    <div class="skill-card glass" data-category="tools">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo git-logo">Git</span>
-                        </div>
-                        <h4 class="skill-name">Git / GitHub</h4>
-                        <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="tools">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo docker-logo">Dk</span>
-                        </div>
-                        <h4 class="skill-name">Docker</h4>
-                        <span class="skill-level">Intermediate</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="tools">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo jupyter-logo">Jp</span>
-                        </div>
-                        <h4 class="skill-name">Jupyter Labs</h4>
-                        <span class="skill-level">Advanced</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-                    </div>
-
-                    <!-- Cloud Basics -->
-                    <div class="skill-card glass" data-category="cloud">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo aws-logo">Aw</span>
-                        </div>
-                        <h4 class="skill-name">AWS Basics</h4>
-                        <span class="skill-level">Basic</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%;"></div></div>
-                    </div>
-                    <div class="skill-card glass" data-category="cloud">
-                        <div class="skill-icon-wrapper">
-                            <span class="skill-logo gcp-logo">Gc</span>
-                        </div>
-                        <h4 class="skill-name">GCP Cloud</h4>
-                        <span class="skill-level">Basic</span>
-                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 65%;"></div></div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -333,8 +304,9 @@
                         <div class="project-badge">98.4% Accuracy</div>
                         <div class="project-content">
                             <h3 class="project-title">NeuroScan</h3>
-                            <p class="project-tagline">Deep Learning pipeline for automated brain tumor classification from MRI scans.</p>
-                            
+                            <p class="project-tagline">Deep Learning pipeline for automated brain tumor classification
+                                from MRI scans.</p>
+
                             <div class="project-metric-highlight">
                                 <span class="m-label">Task:</span>
                                 <span class="m-val">Multi-class Image Classification</span>
@@ -343,11 +315,13 @@
                             <div class="project-quick-specs">
                                 <div class="spec-item">
                                     <span class="spec-title">Problem</span>
-                                    <span class="spec-desc">Manual MRI reading is slow, leading to diagnosis delays.</span>
+                                    <span class="spec-desc">Manual MRI reading is slow, leading to diagnosis
+                                        delays.</span>
                                 </div>
                                 <div class="spec-item">
                                     <span class="spec-title">Solution</span>
-                                    <span class="spec-desc">CNN-based Transfer Learning model utilizing ResNet-50.</span>
+                                    <span class="spec-desc">CNN-based Transfer Learning model utilizing
+                                        ResNet-50.</span>
                                 </div>
                             </div>
 
@@ -357,12 +331,15 @@
                                 <span class="badge">OpenCV</span>
                                 <span class="badge">Python</span>
                             </div>
-                            
+
                             <div class="project-links">
                                 <button class="btn btn-sm btn-outline open-modal-btn">Read Case Study</button>
-                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank"
+                                    rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                     </svg>
                                 </a>
                             </div>
@@ -374,8 +351,9 @@
                         <div class="project-badge">120ms Latency</div>
                         <div class="project-content">
                             <h3 class="project-title">KITS-Bot</h3>
-                            <p class="project-tagline">Intelligent campus assistant utilizing Retrieval-Augmented Generation (RAG) for student queries.</p>
-                            
+                            <p class="project-tagline">Intelligent campus assistant utilizing Retrieval-Augmented
+                                Generation (RAG) for student queries.</p>
+
                             <div class="project-metric-highlight">
                                 <span class="m-label">Task:</span>
                                 <span class="m-val">RAG Question-Answering</span>
@@ -384,11 +362,13 @@
                             <div class="project-quick-specs">
                                 <div class="spec-item">
                                     <span class="spec-title">Problem</span>
-                                    <span class="spec-desc">Students struggle to locate official academic guidelines quickly.</span>
+                                    <span class="spec-desc">Students struggle to locate official academic guidelines
+                                        quickly.</span>
                                 </div>
                                 <div class="spec-item">
                                     <span class="spec-title">Solution</span>
-                                    <span class="spec-desc">FAISS vector database with Llama-3-8B and HuggingFace API.</span>
+                                    <span class="spec-desc">FAISS vector database with Llama-3-8B and HuggingFace
+                                        API.</span>
                                 </div>
                             </div>
 
@@ -398,12 +378,15 @@
                                 <span class="badge">FAISS</span>
                                 <span class="badge">HuggingFace</span>
                             </div>
-                            
+
                             <div class="project-links">
                                 <button class="btn btn-sm btn-outline open-modal-btn">Read Case Study</button>
-                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank"
+                                    rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                     </svg>
                                 </a>
                             </div>
@@ -415,8 +398,9 @@
                         <div class="project-badge">45 FPS Inference</div>
                         <div class="project-content">
                             <h3 class="project-title">AeroDetect</h3>
-                            <p class="project-tagline">Real-time lightweight object detection system designed for drone-mounted cameras.</p>
-                            
+                            <p class="project-tagline">Real-time lightweight object detection system designed for
+                                drone-mounted cameras.</p>
+
                             <div class="project-metric-highlight">
                                 <span class="m-label">Task:</span>
                                 <span class="m-val">Real-time Object Detection</span>
@@ -425,11 +409,13 @@
                             <div class="project-quick-specs">
                                 <div class="spec-item">
                                     <span class="spec-title">Problem</span>
-                                    <span class="spec-desc">Heavy detection models lag and drain drone batteries rapidly.</span>
+                                    <span class="spec-desc">Heavy detection models lag and drain drone batteries
+                                        rapidly.</span>
                                 </div>
                                 <div class="spec-item">
                                     <span class="spec-title">Solution</span>
-                                    <span class="spec-desc">Fine-tuned YOLOv8-nano exported to ONNX Runtime engine.</span>
+                                    <span class="spec-desc">Fine-tuned YOLOv8-nano exported to ONNX Runtime
+                                        engine.</span>
                                 </div>
                             </div>
 
@@ -439,12 +425,15 @@
                                 <span class="badge">OpenCV</span>
                                 <span class="badge">Python</span>
                             </div>
-                            
+
                             <div class="project-links">
                                 <button class="btn btn-sm btn-outline open-modal-btn">Read Case Study</button>
-                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank"
+                                    rel="noopener noreferrer" class="link-github" aria-label="GitHub Repository">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                     </svg>
                                 </a>
                             </div>
@@ -467,9 +456,10 @@
                     <!-- Left Column: Academic Background -->
                     <div class="timeline-column">
                         <h3 class="column-title">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" class="title-svg-icon">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" class="title-svg-icon">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
                             </svg>
                             Academic Degrees
                         </h3>
@@ -482,7 +472,9 @@
                                 <div class="timeline-gpa">
                                     <strong>CGPA:</strong> 9.15 / 10.0
                                 </div>
-                                <p class="timeline-desc">Specialized curriculum focusing on Artificial Intelligence, Pattern Recognition, Deep Learning paradigms, Database Systems, and Neural Networks.</p>
+                                <p class="timeline-desc">Specialized curriculum focusing on Artificial Intelligence,
+                                    Pattern Recognition, Deep Learning paradigms, Database Systems, and Neural Networks.
+                                </p>
                                 <div class="coursework-tags">
                                     <span class="c-tag">Design of Neural Networks</span>
                                     <span class="c-tag">Natural Language Processing</span>
@@ -496,9 +488,10 @@
                     <!-- Right Column: Online Certifications -->
                     <div class="certifications-column">
                         <h3 class="column-title">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" class="title-svg-icon">
-                                <circle cx="12" cy="8" r="7"/>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" class="title-svg-icon">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
                             </svg>
                             Certifications
                         </h3>
@@ -506,22 +499,27 @@
                             <div class="cert-card glass">
                                 <div class="cert-provider google">Google Cloud</div>
                                 <h4 class="cert-name">Google TensorFlow Developer</h4>
-                                <p class="cert-desc">Validated skills in building and training models with TensorFlow, computer vision pipelines, and sequential NLP structures.</p>
+                                <p class="cert-desc">Validated skills in building and training models with TensorFlow,
+                                    computer vision pipelines, and sequential NLP structures.</p>
                             </div>
                             <div class="cert-card glass">
                                 <div class="cert-provider coursera">Coursera</div>
                                 <h4 class="cert-name">Deep Learning Specialization</h4>
-                                <p class="cert-desc">Issued by DeepLearning.AI. Mastered structural neural networks, hyperparameter tuning, Structuring ML projects, CNNs, and sequence models (RNNs/LSTMs).</p>
+                                <p class="cert-desc">Issued by DeepLearning.AI. Mastered structural neural networks,
+                                    hyperparameter tuning, Structuring ML projects, CNNs, and sequence models
+                                    (RNNs/LSTMs).</p>
                             </div>
                             <div class="cert-card glass">
                                 <div class="cert-provider kaggle">Kaggle</div>
                                 <h4 class="cert-name">Intermediate Machine Learning</h4>
-                                <p class="cert-desc">Covered data cleaning, categorical variables, pipeline building, pipelines optimization, and tree-based ensembles (XGBoost).</p>
+                                <p class="cert-desc">Covered data cleaning, categorical variables, pipeline building,
+                                    pipelines optimization, and tree-based ensembles (XGBoost).</p>
                             </div>
                             <div class="cert-card glass">
                                 <div class="cert-provider nptel">NPTEL / SWAYAM</div>
                                 <h4 class="cert-name">Deep Learning for Computer Vision</h4>
-                                <p class="cert-desc">Advanced credit course focusing on structural object detection models, attention mechanisms, and medical image segmentation.</p>
+                                <p class="cert-desc">Advanced credit course focusing on structural object detection
+                                    models, attention mechanisms, and medical image segmentation.</p>
                             </div>
                         </div>
                     </div>
@@ -542,9 +540,10 @@
                     <!-- Column 1: Internships & Work -->
                     <div class="exp-column">
                         <h3 class="column-title">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" class="title-svg-icon">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" class="title-svg-icon">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                             </svg>
                             Internships
                         </h3>
@@ -554,7 +553,9 @@
                                 <span class="timeline-period">May 2025 — June 2025 (2 Mos)</span>
                                 <h4 class="timeline-title">AI Engineer Intern</h4>
                                 <span class="timeline-inst">SmartDoc Solutions</span>
-                                <p class="timeline-desc">Designed an intelligent OCR classification portal that auto-extracted customer billing metrics from invoice PDFs with 96% accuracy, shortening documentation cycle time by 40%.</p>
+                                <p class="timeline-desc">Designed an intelligent OCR classification portal that
+                                    auto-extracted customer billing metrics from invoice PDFs with 96% accuracy,
+                                    shortening documentation cycle time by 40%.</p>
                                 <div class="coursework-tags">
                                     <span class="c-tag">EasyOCR</span>
                                     <span class="c-tag">Regex Engines</span>
@@ -567,8 +568,10 @@
                     <!-- Column 2: Hackathons & Open Source -->
                     <div class="achievements-column">
                         <h3 class="column-title">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" class="title-svg-icon">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                stroke-width="2" class="title-svg-icon">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                             </svg>
                             Achievements
                         </h3>
@@ -577,21 +580,25 @@
                                 <div class="achievement-icon">🏆</div>
                                 <div class="achievement-info">
                                     <h4>1st Place — KITS HackFest 2025</h4>
-                                    <p>Led a 4-person team to build "EcoSort"—an automated edge-device classification bin using Raspberry Pi and MobileNetV2 that accurately sorts waste categories in 300ms.</p>
+                                    <p>Led a 4-person team to build "EcoSort"—an automated edge-device classification
+                                        bin using Raspberry Pi and MobileNetV2 that accurately sorts waste categories in
+                                        300ms.</p>
                                 </div>
                             </div>
                             <div class="achievement-item glass">
                                 <div class="achievement-icon">📈</div>
                                 <div class="achievement-info">
                                     <h4>Top 6% — Kaggle Playground Series</h4>
-                                    <p>Placed in the top 6% globally in a tabular binary classification challenge using LightGBM hyperparameter optimization and strategic target-encoding features.</p>
+                                    <p>Placed in the top 6% globally in a tabular binary classification challenge using
+                                        LightGBM hyperparameter optimization and strategic target-encoding features.</p>
                                 </div>
                             </div>
                             <div class="achievement-item glass">
                                 <div class="achievement-icon">📜</div>
                                 <div class="achievement-info">
                                     <h4>Research Paper Presentation</h4>
-                                    <p>Presented a student research paper titled "Optimizing CNN Quantization for Edge Devices" at the National Conference on Emerging AI Tech (NCEAT-2025).</p>
+                                    <p>Presented a student research paper titled "Optimizing CNN Quantization for Edge
+                                        Devices" at the National Conference on Emerging AI Tech (NCEAT-2025).</p>
                                 </div>
                             </div>
                         </div>
@@ -613,26 +620,31 @@
                     <div class="contact-info glass">
                         <div class="card-glow"></div>
                         <h3>Let's build something intelligent.</h3>
-                        <p>Whether you're looking to hire an AIML intern/developer, want to discuss a research idea, or just want to chat about AI ethics and modern architectures—feel free to drop a message!</p>
-                        
+                        <p>Whether you're looking to hire an AIML intern/developer, want to discuss a research idea, or
+                            just want to chat about AI ethics and modern architectures—feel free to drop a message!</p>
+
                         <div class="contact-details">
                             <div class="contact-detail-item">
                                 <div class="cd-icon">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                        <polyline points="22,6 12,13 2,6"/>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
                                     </svg>
                                 </div>
                                 <div class="cd-text">
                                     <span class="cd-title">Email</span>
-                                    <a href="mailto:musipatlaharicharan2005@gmail.com" class="cd-val">musipatlaharicharan2005@gmail.com</a>
+                                    <a href="mailto:musipatlaharicharan2005@gmail.com"
+                                        class="cd-val">musipatlaharicharan2005@gmail.com</a>
                                 </div>
                             </div>
                             <div class="contact-detail-item">
                                 <div class="cd-icon">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                        <circle cx="12" cy="10" r="3"/>
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
                                     </svg>
                                 </div>
                                 <div class="cd-text">
@@ -643,16 +655,22 @@
                         </div>
 
                         <div class="contact-socials">
-                            <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/musipatlaharicharan?tab=repositories" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" stroke="none" fill="currentColor" r="2"/>
+                            <a href="https://www.linkedin.com/in/hari-charan-musipatla-8802612b7" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" stroke="none" fill="currentColor" r="2" />
                                 </svg>
                             </a>
                         </div>
@@ -670,10 +688,11 @@
                                 <label for="email" class="form-label">Email</label>
                             </div>
                             <div class="form-group">
-                                <textarea id="message" name="message" required placeholder=" " rows="5" class="form-input"></textarea>
+                                <textarea id="message" name="message" required placeholder=" " rows="5"
+                                    class="form-input"></textarea>
                                 <label for="message" class="form-label">Message</label>
                             </div>
-                            
+
                             <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">
                                 <span class="btn-text">Send Message</span>
                                 <span class="btn-spinner hidden"></span>
@@ -708,4 +727,5 @@
     <!-- JavaScript Application File -->
     <script src="app.js"></script>
 </body>
+
 </html>

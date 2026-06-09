@@ -825,18 +825,23 @@ a {
 }
 
 .python-logo { color: #3776AB; }
-.cpp-logo { color: #00599C; }
-.sql-logo { color: #f29111; }
+.cpp-logo    { color: #f89820; }   /* Java orange */
+.sql-logo    { color: #00758f; }   /* MySQL teal */
 .pytorch-logo { color: #EE4C2C; }
-.tf-logo { color: #FF6F00; }
+.tf-logo     { color: #FF6F00; }
 .sklearn-logo { color: #F7931E; }
-.hf-logo { color: #FFD21E; }
-.nltk-logo { color: #6FADCF; }
-.git-logo { color: #F05032; }
+.pandas-logo  { color: #150458; background: #e8d5f5; border-radius: 4px; padding: 1px 3px; }
+.html-logo   { color: #E34F26; }
+.js-logo     { color: #F7DF1E; background: #1a1a1a; border-radius: 4px; padding: 1px 3px; }
+.react-logo  { color: #61DAFB; }
+.node-logo   { color: #339933; }
+.hf-logo     { color: #FFD21E; }
+.nltk-logo   { color: #6FADCF; }
+.git-logo    { color: #F05032; }
 .docker-logo { color: #2496ED; }
 .jupyter-logo { color: #F37626; }
-.aws-logo { color: #FF9900; }
-.gcp-logo { color: #4285F4; }
+.aws-logo    { color: #FF9900; }
+.gcp-logo    { color: #4285F4; }
 
 .skill-name {
     font-size: 1.15rem;
