@@ -360,46 +360,60 @@ function initSkillFilters() {
    PROJECT MODALS (DYNAMIC INJECTION)
    ========================================================================== */
 const projectsData = {
-    neuroscan: {
-        title: "NeuroScan",
-        tagline: "Brain Tumor Classifier",
-        metric: "98.4% Accuracy",
-        metricLabel: "Validation Accuracy",
-        duration: "3 Weeks (College Project)",
-        github: "https://github.com/musipatlaharicharan?tab=repositories",
-        problem: "Manual reading of MRI scans is highly time-consuming, prone to human error, and delays critical patient interventions during emergencies.",
-        solution: "Designed a fine-tuned ResNet-50 Convolutional Neural Network inside PyTorch. Applied data augmentation (rotations, scaling, shear) to counter classroom dataset imbalances, followed by custom dense classifier head fine-tuning.",
-        result: "Achieved a verified validation accuracy of 98.4% with a low false-negative rate. Built a modular inference code pipeline utilizing ONNX compilation which reduces image evaluation to 80ms on CPU.",
-        pipeline: ["MRI Input", "ResNet-50 Feature Map", "Global Average Pooling", "Dense Prediction Classifier", "Output Diagnosis"],
-        tech: ["PyTorch", "Python", "ONNX Runtime", "OpenCV", "Scikit-image"]
+    mlproject: {
+        title: "Student Score Predictor",
+        tagline: "ML Model Training on students.csv",
+        metric: "End-to-End Pipeline",
+        metricLabel: "Feature Engineering → Deployment",
+        duration: "Personal Project",
+        github: "https://github.com/musipatlaharicharan/mlproject",
+        problem: "Educational institutions need a data-driven way to identify students who are likely to underperform, allowing early intervention before exam results. Raw CSV data alone doesn't surface these patterns without an intelligent processing layer.",
+        solution: "Built a complete machine learning pipeline using Python and Scikit-Learn, ingesting the students.csv dataset. Applied preprocessing with column transformers, feature engineering for categorical variables, and tested multiple regression models (Linear Regression, Ridge, RandomForest, XGBoost) with cross-validation to find the best performer. Packaged as a Flask web app for live score prediction.",
+        result: "Achieved a clean, modular, production-style codebase following software engineering best practices with a custom exception handler, logging system, and prediction pipeline. The model accurately predicts student math scores based on demographic and study-behavior features.",
+        pipeline: ["students.csv Input", "Data Preprocessing", "Feature Engineering", "Model Training & CV", "Best Model Selection", "Flask API Prediction"],
+        tech: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Flask", "XGBoost"]
     },
-    kitsbot: {
-        title: "KITS-Bot",
-        tagline: "Campus RAG Chatbot",
-        metric: "120ms Latency",
-        metricLabel: "Inference Speed",
-        duration: "1 Month (Hackfest Submission)",
-        github: "https://github.com/musipatlaharicharan?tab=repositories",
-        problem: "Academic rules, syllabus PDFs, and timetable modifications are dispersed across different department files. Students struggle to find answers immediately.",
-        solution: "Established a Retrieval-Augmented Generation (RAG) system. Loaded administrative files, split documents using RecursiveCharacterTextSplitter, processed text embeddings via HuggingFace models, and saved arrays inside a FAISS Vector Database.",
-        result: "Implemented localized text query parsing that provides verified guidelines within 120ms. Restricts hallucinations by grounding LLM responses directly on embedded university PDFs.",
-        pipeline: ["Student Query", "FAISS Similarity Search", "Prompt Augmentation", "Llama-3 Generator", "Answer Output"],
-        tech: ["LangChain", "HuggingFace API", "FAISS DB", "Llama-3-8B", "FastAPI"]
+    portfolio: {
+        title: "AIML Developer Portfolio",
+        tagline: "Personal Portfolio Website",
+        metric: "100% Custom Built",
+        metricLabel: "Zero Frameworks — Pure HTML/CSS/JS",
+        duration: "Personal Project",
+        github: "https://github.com/musipatlaharicharan/potfolioofmy",
+        problem: "Generic portfolio templates fail to reflect a developer's personality, technical depth, and design sensibility. A personal brand website must stand out to recruiters and convey AIML expertise instantly.",
+        solution: "Hand-crafted an animated dark-mode portfolio entirely from scratch using HTML5, CSS3, and vanilla JavaScript. Implemented an interactive neural network particle canvas background using the Canvas API, glassmorphism card effects with mouse-spotlight tracking, an auto-typing terminal animation, multi-accent theme switcher, project case-study modals, and a fully responsive layout.",
+        result: "A premium, performant single-page portfolio with zero library dependencies, smooth 60fps animations, and a design system inspired by modern developer portfolios. Features scroll-spy navigation, skill bar animations, and contact form simulation.",
+        pipeline: ["Design System", "Neural Canvas BG", "Glassmorphism Cards", "Typing Animation", "Theme Switcher", "Project Modals"],
+        tech: ["HTML5", "CSS3", "JavaScript ES6+", "Canvas API", "Google Fonts", "CSS Variables"]
     },
-    aerodetect: {
-        title: "AeroDetect",
-        tagline: "Real-time Edge Drone Detection",
-        metric: "45 FPS Inference",
-        metricLabel: "Edge Device Velocity",
-        duration: "2 Months (College Workshop Lab)",
-        github: "https://github.com/musipatlaharicharan?tab=repositories",
-        problem: "Drone cameras require quick, energy-efficient object locators to perform object tracking without overheating high-payload processors.",
-        solution: "Fine-tuned a YOLOv8-nano model on custom aerial photography labels. Optimized performance bottlenecks by quantizing float32 weights into float16 models and compiling using ONNX engines.",
-        result: "Achieved robust real-time tracking performance at 45 Frames Per Second on a standard CPU edge workstation, reducing power utilization by 35% compared to baseline YOLO setups.",
-        pipeline: ["Camera Video Input", "YOLOv8-Nano Backbone", "Neck Layer Convolutions", "ONNX Runtime Layer", "Coordinate Detection"],
-        tech: ["YOLOv8", "ONNX", "OpenCV Engine", "Python", "Raspberry Pi 4"]
+    farmtohome: {
+        title: "Farm to Home",
+        tagline: "AgriTech Direct-to-Consumer Platform",
+        metric: "Zero Middlemen",
+        metricLabel: "Farmer-to-Buyer Direct Channel",
+        duration: "College Team Project",
+        github: "https://github.com/musipatlaharicharan",
+        problem: "Farmers in India lose 30–40% of their income to intermediary agents and wholesale markets. They have no direct channel to reach end consumers, leading to lower wages and food price inflation for buyers.",
+        solution: "Designed and built a full-stack agri-commerce web application using Python Flask and MySQL. Farmers can register, list their produce with prices and quantities, and manage orders. Buyers can browse available produce by category, add items to a cart, and place orders with real-time stock updates.",
+        result: "Delivered a working end-to-end marketplace application with separate farmer and buyer dashboards, order tracking, and product management. The platform demonstrates how technology can solve real agricultural supply-chain inefficiencies.",
+        pipeline: ["Farmer Registration", "Product Listing", "Buyer Browse & Cart", "Order Placement", "Order Tracking", "Farmer Dashboard"],
+        tech: ["Python", "Flask", "MySQL", "HTML5", "CSS3", "JavaScript", "Jinja2"]
+    },
+    aiexam: {
+        title: "AI Exam Platform",
+        tagline: "Real-time Proctored Exam via WebSockets",
+        metric: "Real-time Bi-directional",
+        metricLabel: "WebSocket Communication",
+        duration: "College Project",
+        github: "https://github.com/musipatlaharicharan/Ai-exam",
+        problem: "Traditional online exam systems rely on static HTTP polling which creates latency, scalability issues, and poor real-time monitoring. Students and examiners lack an interactive, low-latency exam experience with instant feedback.",
+        solution: "Built a real-time AI-powered exam platform using Flask-SocketIO to establish persistent WebSocket connections between examinees and the server. Students receive questions dynamically, answer submissions are processed instantly, and AI auto-grading evaluates responses in real time. Live session monitoring events are broadcast to proctors simultaneously.",
+        result: "Achieved genuine real-time bidirectional communication for exam sessions with sub-100ms event propagation. AI auto-grading delivers instant scoring with results displayed immediately after quiz completion. The system supports multiple concurrent exam sessions.",
+        pipeline: ["Student Login", "WebSocket Handshake", "Live Question Feed", "Answer Submission", "AI Auto-grading", "Instant Results"],
+        tech: ["Python", "Flask", "Flask-SocketIO", "WebSockets", "JavaScript", "Socket.io Client", "HTML/CSS"]
     }
 };
+
 
 function initProjectModals() {
     const modal = document.getElementById('projectModal');
