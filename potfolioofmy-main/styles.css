@@ -1132,6 +1132,10 @@ a {
 .cert-provider.coursera { color: #0056D2; }
 .cert-provider.kaggle { color: #20BEFF; }
 .cert-provider.nptel { color: #F89C1E; }
+.cert-provider.student-forge { color: #BD00FF; }
+.cert-provider.java { color: #F89820; }
+.cert-provider.python { color: #3776AB; }
+.cert-provider.mysql { color: #00758F; }
 
 .cert-name {
     font-size: 1.15rem;
